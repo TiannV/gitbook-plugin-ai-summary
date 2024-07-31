@@ -1,0 +1,34 @@
+{
+  "name": "gitbook-plugin-ai-summary",
+  "version": "1.0.0",
+  "description": "gitbook ai摘要插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "gitbook": ">=2.4.3"
+  },
+  "gitbook": {
+    "properties": {
+      "supabase_url": {
+        "required": false,
+        "title": "supabase url",
+        "type": "string"
+      },
+      "supabase_key": {
+        "required": false,
+        "title": "supabase key",
+        "type": "string"
+      },
+      "summary_url": {
+        "required": false,
+        "title": "summary url",
+        "type": "string"
+      }
+    }
+  }
+}
