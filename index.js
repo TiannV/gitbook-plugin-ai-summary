@@ -45,10 +45,9 @@ module.exports = {
 
             // Example:
             //page.content = "# Title\n" + page.content;
-                           var str = `
-                <script src="./gitbook/gitbook-plugin-ai-summary/plugin.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>`
+            var str = "<script src='./gitbook/gitbook-plugin-ai-summary/plugin.js'></script>"
+            str +=  "<script src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js'></script>"
+            str +=  "<script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js'></script>"
                 page.content += str
             return page;
         },
